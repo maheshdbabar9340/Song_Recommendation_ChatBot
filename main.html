@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Song Recommendation Chatbot - Rero</title>
+        <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css>
+        <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "e3f927c3-9138-4796-ada5-df598f08a291", // The ID of this integration.
+      region: "us-east", // The region your integration is hosted in.
+      serviceInstanceID: "f96e919e-5b02-4b34-81c5-9e8ea053fc29", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+            document.addEventListener('play', function(e){
+                document.getElementById("karid1").innerHTML=" ";
+                document.getElementById("karid2").innerHTML=" ";
+                document.getElementById("karid3").innerHTML=" ";
+                if(document.getElementById("music")){
+                        document.getElementById("testing").style.display="inline-block";
+                }
+                if(document.getElementById("tsad") || document.getElementById("hsad") || document.getElementById("esad") || document.getElementById("tasad")){
+                      var randomNumber = Math.floor(Math.random()*8)+1;
+                      document.body.style.backgroundImage = "url(projquote/Sadness/resized_images/"+randomNumber+ ".jpg)";
+                }
+                if(document.getElementById("tlonely") || document.getElementById("hlonely") || document.getElementById("elonely") || document.getElementById("talonely")){
+                      var randomNumber = Math.floor(Math.random()*8)+1;
+                      document.body.style.backgroundImage = "url(projquote/Loneliness/resized_images/"+randomNumber+ ".jpg)";
+                }
+                if(document.getElementById("thappy") || document.getElementById("hhappy") || document.getElementById("ehappy") || document.getElementById("tahappy")){
+                      var randomNumber = Math.floor(Math.random()*8)+1;
+                      document.body.style.backgroundImage = "url(projquote/Happy/resized_images/"+randomNumber+ ".jpg)";
+                }
+                if(document.getElementById("tlove") || document.getElementById("hlove") || document.getElementById("elove") || document.getElementById("talove")){
+                      var randomNumber = Math.floor(Math.random()*8)+1;
+                      document.body.style.backgroundImage = "url(projquote/Love/resized_images/"+randomNumber+ ".jpg)";
+                }
+                var audios = document.getElementsByTagName('audio');
+                for(var i = 0, len = audios.length; i < len;i++){
+                    if(audios[i] != e.target){
+                        audios[i].pause();
+                    }
+                }
+            }, true); 
+        </script>
+
+
+
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="kar2.css">
+    </head>
+    <body>
+        <div id="karid1" class="first-sec d-flex flex-row justify-content-start">
+            <h1 class="primary-title"><a href="index.html" class="btn mybtn"><i class="fas fa-compact-disc mydisk"></i> Chatbot</a></h1>
+            <div class="secondary-titles">
+                <a class="top-links btn" href="">About Me</a>
+                <a class="top-links btn" href="">Developer nfo</a>
+                <a class="top-links btn" href="">Contact us</a>
+            </div>
+        </div>
+        <div id="karid2" class="d-flex flex-row">
+            <div class="intro">
+                <h1 class="intro-title">Welcome to Song Recommendation Chatbot - Rero</h1>
+                <p>We recommend the best music that matches your mood</p>
+            </div>
+            <div class="carousel-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="sugg">Remembering your loved ones,<br>We have the right music for you.</div>
+                            <img src="imgs/resized_images/2.jpg" class="myimg d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="sugg">Feeling you are alone!<br>Immerse in our world of accompanying music.</div>
+                            <img src="imgs/resized_images/3.jpg" class="myimg d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="sugg">Feeling jolly,<br>Let me be a part of your Joy.</div>
+                            <img src="imgs/resized_images/4.jpg" class="myimg d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="sugg">Are you down,<br>Then let's put a smile on that face.</div>
+                            <img src="imgs/resized_images/1.jpg" class="myimg d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="sugg">Can't control your rage,<br> We'll cool you.</div>
+                            <img src="imgs/resized_images/5.jpg" class="myimg d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="karid3"class="clicking">
+            <p>Click here to start interaction with our bot <span class="emoji">&#x2192</span></p>
+        </div>
+
+    </body>
+</html>

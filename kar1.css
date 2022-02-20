@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+body {
+	color: #000000;
+	font-size: 30px;
+	height: 100vh;
+	background-image: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);
+	
+	/*background-color: #F4D03F;*/
+	/*background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);*/
+
+	/*background-color: #FFFFFF;
+	background-image: linear-gradient(69deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);*/
+
+	/*background-image: radial-gradient( circle farthest-corner at -4.5% 34.3%,  rgba(13,20,174,1) 0%, rgba(243,165,140,1) 90% );*/
+
+	/*background-image: linear-gradient( 109.6deg,  rgba(255,179,189,1) 1.8%, rgba(254,248,154,1) 50.6%, rgba(161,224,186,1) 100.3% );*/
+
+	/*background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);*/
+
+	/*background: #654ea3;   fallback for old browsers */
+	/*background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */*/
+	/*background: linear-gradient(to right, #eaafc8, #654ea3);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.first-sec {
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 5px;
+	font-family: "Roboto";
+}
+.primary-title {
+	margin-left: 30px;
+	padding: 10px;
+	/*font-size: 100px;*/
+}
+.secondary-titles {
+	/*text-align: center;*/
+	margin-left: 42%;
+	padding-top: 10px;
+}
+.top-links {
+	margin-left: 20px;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 25px;
+	/*margin-top: 30px;*/
+}
+.main-container {
+	text-align: center;
+	height: 80%;
+	/*background-color: #ffffff;*/
+}
+.main-title {
+	font-size: 50px;
+	font-weight: bold;
+}
+.mybtn {
+	background-color: #47a305;
+	color: #ffffff;
+	border-radius: 25px;
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 35px;
+}
+.mybtn1 {
+	color: #ffffff;
+	font-size: 25px;
+}
+.mydisk{
+	font-size: 30px;
+	display: inline-block;
+	color: #ffa703;
+}
